@@ -13,6 +13,11 @@ Card::Card() :
 	_back("")
 {};
 
+Card::Card(string f, string b) :
+	_front(f),
+	_back(b)
+{}
+
 string Card::getFront() 
 {
 	return _front;

@@ -18,6 +18,7 @@ class Card {
 
 public:
 	Card();
+	Card(string f, string b);
 
 	string getFront();
 	string getBack();

@@ -12,6 +12,10 @@ This program will help you study with flash cards
 using std::vector;
 #include <algorithm>
 using std::random_shuffle;
+#include <iostream>
+using std::cin;
+using std::cout;
+using std::endl;
 
 int main()
 {
@@ -31,6 +35,7 @@ int main()
 	random_shuffle(deck.begin(), deck.end());
 
 	int got = 0;
+	int notGot = 0;
 
 	//Go through deck
 	for (auto c : deck)
@@ -40,5 +45,12 @@ int main()
 		{
 			got++;
 		}
+		else
+		{
+			notGot++;
+		}
 	}
+
+	cout << "Finished..." << endl;
+	cout << "You got " << got << " correct, and " << notGot << "incorrect" << endl;
 }

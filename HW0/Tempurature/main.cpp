@@ -40,16 +40,13 @@ double c_ctof(const char* str)
 
 int main(int argc, char* argv[])
 {
-	vector<char> temps; //{'0', '10', '25', '50', '100'}; <-- Didn't work for some reason...
-	temps.push_back('0');
-	temps.push_back('10');
-	temps.push_back('25');
-	temps.push_back('50');
-	temps.push_back('100');
-
-	cout << "Converting " << temps[0] << " degrees farenheit into celsius:" << endl;
-	cout << cpp_ftoc(temps[0]) << endl;
-
-	cout << "Converting " << temps[0] << " degrees celsius into farenheit:" << endl;
-	cout << c_ctof(temps[0]) << endl;
+	if (argc >= 2 && argv[1] == std::string("--ftoc"))
+	{
+		cpp_ftoc(argv[argc]);
+	}
+	
+	if (argc >= 2 && argv[1] == std::string("--ctof"))
+	{
+		c_ctof(argv[argc]);
+	}
 }

@@ -15,6 +15,7 @@ using std::string;
 class Card {
 	string _front;
 	string _back;
+	bool _correct;
 
 public:
 	Card();
@@ -22,8 +23,11 @@ public:
 
 	string getFront();
 	string getBack();
+	bool getC();
 	void setFront(string s);
 	void setBack(string s);
+
+	void test();
 };
 
 #endif // !card_h

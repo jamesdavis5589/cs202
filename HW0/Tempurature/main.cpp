@@ -43,7 +43,7 @@ double c_ctof(const char* str)
 int main(int argc, char* argv[])
 {
 	vector<string> args;
-	for (int i; i < argc; i++)
+	for (int i = 0; i < argc; i++)
 	{
 		args.push_back(argv[i]);
 	}

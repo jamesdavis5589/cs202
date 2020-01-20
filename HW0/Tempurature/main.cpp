@@ -15,6 +15,8 @@ using std::vector;
 using std::cout;
 using std::cin;
 using std::endl;
+#include <string>
+using std::string;
 
 //(0°C × 9/5) + 32 = 32°F
 
@@ -40,13 +42,22 @@ double c_ctof(const char* str)
 
 int main(int argc, char* argv[])
 {
-	if (argc >= 2 && argv[1] == std::string("--ftoc"))
+	vector<string> args;
+	for (int i; i < argc; i++)
 	{
-		cpp_ftoc(argv[argc]);
+		args.push_back(argv[i]);
 	}
-	
-	if (argc >= 2 && argv[1] == std::string("--ctof"))
+
+	for (const auto& arg : args)
 	{
-		c_ctof(argv[argc]);
+		if (argc >= 2 && args[1] == std::string("--ftoc"))
+		{
+			cpp_ftoc(argv[argc]);
+		}
+
+		if (argc >= 2 && args[1] == std::string("--ctof"))
+		{
+			c_ctof(argv[argc]);
+		}
 	}
 }

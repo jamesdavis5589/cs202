@@ -52,5 +52,5 @@ int main()
 	}
 
 	cout << "Finished..." << endl;
-	cout << "You got " << got << " correct, and " << notGot << "incorrect" << endl;
+	cout << "You got " << got << " correct, and " << notGot << " incorrect" << endl;
 }

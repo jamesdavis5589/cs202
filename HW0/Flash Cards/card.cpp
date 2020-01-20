@@ -57,16 +57,17 @@ void Card::test()
 	cout << "Front: " << _front << endl;
 	cout << "Response: ";
 	cin >> input;
-	cout << endl;
 
 	if (input == _back)
 	{
 		cout << "Correct!" << endl;
 		_correct = true;
+		cout << endl;
 	}
 	else
 	{
 		cout << "Incorrect" << endl;
 		_correct = false;
+		cout << endl;
 	}
 }

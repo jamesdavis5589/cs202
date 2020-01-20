@@ -21,6 +21,8 @@ public:
 
 	string getFront();
 	string getBack();
+	void setFront(string s);
+	void setBack(string s);
 };
 
 #endif // !card_h

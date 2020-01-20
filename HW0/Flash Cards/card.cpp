@@ -22,3 +22,13 @@ string Card::getBack()
 {
 	return _back;
 }
+
+void Card::setFront(string s)
+{
+	_front = s;
+}
+
+void Card::setBack(string s)
+{
+	_back = s;
+}

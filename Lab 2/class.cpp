@@ -20,6 +20,13 @@ MyClass::MyClass(int x, char c, std::string s) :
 	word(s)
 {}
 
+MyClass::MyClass(const MyClass& m)
+{
+	number = m.getNumber();
+	letter = m.getLetter();
+	word = m.getWord();
+}
+
 void MyClass::destroy()
 {
 	number = NULL;
@@ -47,12 +54,12 @@ void MyClass::setNumber(int x)
 	number = x;
 }
 
-void MyClass::setLetter(char c)
+void MyClass::setLetter(char &c)
 {
 	letter = c;
 }
 
-void MyClass::setWord(std::string s)
+void MyClass::setWord(const std::string &s)
 {
 	word = s;
 }

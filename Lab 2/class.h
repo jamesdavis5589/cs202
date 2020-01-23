@@ -20,6 +20,7 @@ class MyClass
 public:
 	MyClass();
 	MyClass(int x, char c, std::string s);
+	MyClass(const MyClass& m);
 
 	void destroy();
 
@@ -28,8 +29,8 @@ public:
 	std::string getWord();
 
 	void setNumber(int x);
-	void setLetter(char c);
-	void setWord(std::string s);
+	void setLetter(char &c);
+	void setWord(const std::string &s);
 };
 
 #endif

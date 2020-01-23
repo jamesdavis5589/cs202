@@ -18,6 +18,9 @@
     <ClCompile Include="class.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="classMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="class.h">

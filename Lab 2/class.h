@@ -21,9 +21,15 @@ public:
 	MyClass();
 	MyClass(int x, char c, std::string s);
 
+	void destroy();
+
 	int getNumber();
 	char getLetter();
 	std::string getWord();
+
+	void setNumber(int x);
+	void setLetter(char c);
+	void setWord(std::string s);
 };
 
 #endif

@@ -10,7 +10,7 @@ This program will define my class
 
 MyClass::MyClass() :
 	number(0),
-	letter('_'),
+	letter(' '),
 	word("")
 {}
 
@@ -19,6 +19,13 @@ MyClass::MyClass(int x, char c, std::string s) :
 	letter(c),
 	word(s)
 {}
+
+void MyClass::destroy()
+{
+	number = 0;
+	letter = ' ';
+	word = "";
+}
 
 int MyClass::getNumber()
 {
@@ -33,4 +40,19 @@ char MyClass::getLetter()
 std::string MyClass::getWord()
 {
 	return word;
+}
+
+void MyClass::setNumber(int x)
+{
+	number = x;
+}
+
+void MyClass::setLetter(char c)
+{
+	letter = c;
+}
+
+void MyClass::setWord(std::string s)
+{
+	word = s;
 }

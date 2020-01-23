@@ -22,9 +22,9 @@ MyClass::MyClass(int x, char c, std::string s) :
 
 void MyClass::destroy()
 {
-	number = 0;
-	letter = ' ';
-	word = "";
+	number = NULL;
+	letter = NULL;
+	word = nullptr;
 }
 
 int MyClass::getNumber()

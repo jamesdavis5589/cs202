@@ -9,25 +9,28 @@ This program will define class Stopwatch
 #include "StopWatch.h"
 
 StopWatch::StopWatch() :
-	_time(0)
+	_time(milliseconds{ 0 })
 {}
 
 void StopWatch::start()
 {
-
+	_start = system_clock::now();
 }
 
-double StopWatch::stop()
+milliseconds StopWatch::stop()
+{
+	_end = system_clock::now();
+
+	auto ans = duration_cast<milliseconds>( _end - _start ).count();
+	return milliseconds{ ans };
+}
+
+seconds StopWatch::timeS()
 {
 
 }
 
-double StopWatch::timeS()
-{
-
-}
-
-double StopWatch::timeM()
+milliseconds StopWatch::timeM()
 {
 
 }

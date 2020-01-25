@@ -22,15 +22,16 @@ milliseconds StopWatch::stop()
 	_end = system_clock::now();
 
 	auto ans = duration_cast<milliseconds>( _end - _start ).count();
+	_time = milliseconds{ ans };
 	return milliseconds{ ans };
 }
 
 seconds StopWatch::timeS()
 {
-
+	return seconds{ duration_cast<seconds>(_end - _start).count() };
 }
 
 milliseconds StopWatch::timeM()
 {
-
+	return _time;
 }

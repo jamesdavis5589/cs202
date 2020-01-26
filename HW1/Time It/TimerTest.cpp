@@ -17,7 +17,10 @@ using std::mt19937;
 using std::random_device;
 using std::uniform_int_distribution;
 
-void allocate(int* x, int s)
+StopWatch timer;
+int tempTime = 0;
+
+void allocate(int* &x, int s)
 {
 	//s = number of 0s
 
@@ -33,8 +36,20 @@ void allocate(int* x, int s)
 	}
 }
 
+//Allocates array and times how long it takes as well
+void measureA(int* &x, int s)
+{
+	timer.start();
+	allocate(x, s);
+	timer.stop;
+
+	tempTime = (timer.timeM()).count();
+}
+
 int main()
 {
+	
+
 	//adding memory
 	int* a = new int[10];
 	int* b = new int[100];
@@ -46,17 +61,29 @@ int main()
 	int* h = new int[100000000];
 	int* i = new int[1000000000]; //1B
 
-	//Filling arrays with random values
-	allocate(a, 1);
-	allocate(b, 2);
-	allocate(c, 3);
-	allocate(d, 4);
-	allocate(e, 5);
-	allocate(f, 6);
-	allocate(g, 7);
-	allocate(h, 8);
-	allocate(i, 9);
 
+	cout << "How long does it take to assign values to the arrays?" << endl;
+
+	//Filling arrays with random values
+	measureA(a, 1);
+	cout << "it takes " << tempTime << "milliseconds to allocate 10 array slots" << endl;
+	measureA(b, 2);
+	cout << "it takes " << tempTime << "milliseconds to allocate 100 array slots" << endl;
+	measureA(c, 3);
+	cout << "it takes " << tempTime << "milliseconds to allocate 1000 array slots" << endl;
+	measureA(d, 4);
+	cout << "it takes " << tempTime << "milliseconds to allocate 10000 array slots" << endl;
+	measureA(e, 5);
+	cout << "it takes " << tempTime << "milliseconds to allocate 100000 array slots" << endl;
+	measureA(f, 6);
+	cout << "it takes " << tempTime << "milliseconds to allocate 1000000 array slots" << endl;
+	measureA(g, 7);
+	cout << "it takes " << tempTime << "milliseconds to allocate 10000000 array slots" << endl;
+	measureA(h, 8);
+	cout << "it takes " << tempTime << "milliseconds to allocate 100000000 array slots" << endl;
+	measureA(i, 9);
+	cout << "it takes " << tempTime << "milliseconds to allocate 1000000000 array slots" << endl;
+	cout << endl;
 
 	//removing memory
 	delete[] a, b, c, d, e, f, g, h, i;

@@ -61,11 +61,8 @@ void measureB(vector<int> x, vector<int> s)
 }
 
 //Searches array with binary_search and measures how long it takes
-void measureC(vector<int> x, int l, int v)
+void measureC(vector<int> x, int v)
 {
-	//l is the number of 0s, s is value to be searched for
-	int last = (10 ^ l);
-
 	timer.start();
 	binary_search(x.begin(), x.end(), v);
 	timer.stop();
@@ -74,11 +71,8 @@ void measureC(vector<int> x, int l, int v)
 }
 
 //Sorts an array and measures how long it takes
-void measureD(vector<int> x, int l)
+void measureD(vector<int> x)
 {
-	//l is the number of 0s
-	int last = (10 ^ l);
-
 	timer.start();
 	sort(x.begin(), x.end());
 	timer.stop();
@@ -145,45 +139,45 @@ int main()
 
 	//Sort for binary_search
 	cout << "How long does it take to sort arrays?" << endl;
-	measureD(a, 1);
+	measureD(a);
 	cout << "it takes " << tempTime << " milliseconds to sort 10 array slots" << endl;
-	measureD(b, 2);
+	measureD(b);
 	cout << "it takes " << tempTime << " milliseconds to sort 100 array slots" << endl;
-	measureD(c, 3);
+	measureD(c);
 	cout << "it takes " << tempTime << " milliseconds to sort 1000 array slots" << endl;
-	measureD(d, 4);
+	measureD(d);
 	cout << "it takes " << tempTime << " milliseconds to sort 10000 array slots" << endl;
-	measureD(e, 5);
+	measureD(e);
 	cout << "it takes " << tempTime << " milliseconds to sort 100000 array slots" << endl;
-	measureD(f, 6);
+	measureD(f);
 	cout << "it takes " << tempTime << " milliseconds to sort 1000000 array slots" << endl;
-	measureD(g, 7);
+	measureD(g);
 	cout << "it takes " << tempTime << " milliseconds to sort 10000000 array slots" << endl;
-	measureD(h, 8);
+	measureD(h);
 	cout << "it takes " << tempTime << " milliseconds to sort 100000000 array slots" << endl;
-	measureD(i, 9);
+	measureD(i);
 	cout << "it takes " << tempTime << " milliseconds to sort 1000000000 array slots" << endl;
 	cout << endl << endl;
 
 	//Binary_search
 	cout << "How long does it take to search arrays with binary_search?" << endl;
-	measureC(a, 1, look);
+	measureC(a, look);
 	cout << "it takes " << tempTime << " milliseconds to binary_search 10 array slots" << endl;
-	measureC(b, 2, look);
+	measureC(b, look);
 	cout << "it takes " << tempTime << " milliseconds to binary_search 100 array slots" << endl;
-	measureC(c, 3, look);
+	measureC(c, look);
 	cout << "it takes " << tempTime << " milliseconds to binary_search 1000 array slots" << endl;
-	measureC(d, 4, look);
+	measureC(d, look);
 	cout << "it takes " << tempTime << " milliseconds to binary_search 10000 array slots" << endl;
-	measureC(e, 5, look);
+	measureC(e, look);
 	cout << "it takes " << tempTime << " milliseconds to binary_search 100000 array slots" << endl;
-	measureC(f, 6, look);
+	measureC(f, look);
 	cout << "it takes " << tempTime << " milliseconds to binary_search 1000000 array slots" << endl;
-	measureC(g, 7, look);
+	measureC(g, look);
 	cout << "it takes " << tempTime << " milliseconds to binary_search 10000000 array slots" << endl;
-	measureC(h, 8, look);
+	measureC(h, look);
 	cout << "it takes " << tempTime << " milliseconds to binary_search 100000000 array slots" << endl;
-	measureC(i, 9, look);
+	measureC(i, look);
 	cout << "it takes " << tempTime << " milliseconds to binary_search 1000000000 array slots" << endl;
 	cout << endl << endl << endl;
 }

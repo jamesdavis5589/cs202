@@ -51,13 +51,10 @@ void measureA(vector<int> x, int s)
 }
 
 //Searches array and measures how long it takes
-void measureB(vector<int> x, int l, vector<int> s)
+void measureB(vector<int> x, vector<int> s)
 {
-	//l is the number of 0s, s is value to be searched for
-	int last = (10 ^ l);
-
 	timer.start();
-	search(x.begin(), x.end(), s);
+	search(x.begin(), x.end(), s[0], s[1]);
 	timer.stop();
 
 	tempTime = (timer.timeM()).count();
@@ -119,28 +116,29 @@ int main()
 
 
 	int look = 32;
-	vector<int> ss{ look };
+	int look2 = 33;
+	vector<int> ss{ look, look2 };
 	
 	//Searching arrays and measuring how long it takes
 	//Search
 	cout << "How long does it take to search arrays with std::search?" << endl;
-	measureB(a, 1, ss);
+	measureB(a, ss);
 	cout << "it takes " << tempTime << " milliseconds to search 10 array slots" << endl;
-	measureB(b, 2, ss);
+	measureB(b, ss);
 	cout << "it takes " << tempTime << " milliseconds to search 100 array slots" << endl;
-	measureB(c, 3, ss);
+	measureB(c, ss);
 	cout << "it takes " << tempTime << " milliseconds to search 1000 array slots" << endl;
-	measureB(d, 4, ss);
+	measureB(d, ss);
 	cout << "it takes " << tempTime << " milliseconds to search 10000 array slots" << endl;
-	measureB(e, 5, ss);
+	measureB(e, ss);
 	cout << "it takes " << tempTime << " milliseconds to search 100000 array slots" << endl;
-	measureB(f, 6, ss);
+	measureB(f, ss);
 	cout << "it takes " << tempTime << " milliseconds to search 1000000 array slots" << endl;
-	measureB(g, 7, ss);
+	measureB(g, ss);
 	cout << "it takes " << tempTime << " milliseconds to search 10000000 array slots" << endl;
-	measureB(h, 8, ss);
+	measureB(h, ss);
 	cout << "it takes " << tempTime << " milliseconds to search 100000000 array slots" << endl;
-	measureB(i, 9, ss);
+	measureB(i, ss);
 	cout << "it takes " << tempTime << " milliseconds to search 1000000000 array slots" << endl;
 	cout << endl << endl << endl;
 

@@ -18,5 +18,13 @@
     <ClCompile Include="lab3_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Additional\class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Additional\class.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

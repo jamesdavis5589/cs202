@@ -22,9 +22,9 @@ MyClass::MyClass(int x, char c, std::string s) :
 
 MyClass::MyClass(const MyClass& m)
 {
-	number = m.getNumber();
-	letter = m.getLetter();
-	word = m.getWord();
+	number = m.number;
+	letter = m.letter;
+	word = m.word;
 }
 
 void MyClass::destroy()

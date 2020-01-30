@@ -7,6 +7,7 @@ This program will define my class
 */
 
 #include "class.h"
+#include <iostream>
 
 MyClass::MyClass() :
 	number(0),
@@ -27,11 +28,11 @@ MyClass::MyClass(const MyClass& m)
 	word = m.word;
 }
 
-void MyClass::destroy()
+MyClass::~MyClass()
 {
+	std::cout << "Destroying " << word << "\n";
 	number = NULL;
 	letter = NULL;
-	word = nullptr;
 }
 
 int MyClass::getNumber()

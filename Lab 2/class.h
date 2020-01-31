@@ -22,7 +22,7 @@ public:
 	MyClass(int x, char c, std::string s);
 	MyClass(const MyClass& m);
 
-	void destroy();
+	~MyClass();
 
 	int getNumber();
 	char getLetter();

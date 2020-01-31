@@ -30,7 +30,6 @@ MyClass::MyClass(const MyClass& m)
 
 MyClass::~MyClass()
 {
-	std::cout << "Destroying " << word << "\n";
 	number = NULL;
 	letter = NULL;
 }
@@ -63,4 +62,9 @@ void MyClass::setLetter(char &c)
 void MyClass::setWord(const std::string &s)
 {
 	word = s;
+}
+
+void MyClass::printNum()
+{
+	std::cout << number;
 }

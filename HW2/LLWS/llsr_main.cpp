@@ -16,8 +16,16 @@ using std::endl;
 
 int main()
 {
-	cout << "Creating a version of my class, then adding values to the back using push_rear()" << endl;
+	cout << "Creating class template, then added some base values" << endl;
 	ValueC values;
+	values.push_rear(55);
+	values.push_rear(56);
+	values.push_rear(57);
+	values.push_rear(58);
+	values.push_rear(59);
+	values.push_rear(60);
+
+	cout << "Adding values to the back using push_rear()" << endl;
 	values.push_rear(3);
 	values.push_rear(27);
 	values.push_rear(84);

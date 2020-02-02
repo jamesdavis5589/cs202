@@ -24,22 +24,27 @@ int main()
 	values.push_rear(58);
 	values.push_rear(59);
 	values.push_rear(60);
+	cout << endl;
 
 	cout << "Adding values to the back using push_rear()" << endl;
 	values.push_rear(3);
 	values.push_rear(27);
 	values.push_rear(84);
 	values.push_rear(2);
+	cout << endl;
 
 	cout << "Now adding some values to the front of group using push_front()" << endl;
 	values.push_front(19);
 	values.push_front(33);
+	cout << endl;
 
 	cout << "Will now return the rear-most using pop_rear()" << endl;
 	cout << "The value at the end of the data group is " << values.pop_rear() << endl;
+	cout << endl;
 
 	cout << "Now using pop_front() to get the value at the front of the data group:" << endl;
 	cout << "Value at the front of data group is " << values.pop_front() << endl;
+	cout << endl;
 
 
 	//search
@@ -59,8 +64,10 @@ int main()
 	{
 		cout << "Value found at slot " << result;
 	}
+	cout << endl;
 
 
 	cout << "Will now print out the data values:" << endl;
 	values.print();
+	cout << endl;
 }

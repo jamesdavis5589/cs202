@@ -21,7 +21,7 @@ int ValueC::pop_front()
 
 int ValueC::pop_rear()
 {
-	return(_data[_data.size()]);
+	return(_data[_data.size()-1]);
 }
 
 void ValueC::push_front(int x)

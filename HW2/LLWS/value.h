@@ -16,9 +16,9 @@ struct ValueC {
 	ValueC();
 
 	int pop_front();
-	int pop_back();
-	void push_front();
-	void push_back();
+	int pop_rear();
+	void push_front(int x);
+	void push_rear(int x);
 
 private:
 	std::vector<int> _data;

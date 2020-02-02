@@ -39,3 +39,8 @@ void ValueC::push_rear(int x)
 {
 	_data.push_back(x);
 }
+
+int ValueC::get(int x)
+{
+	return _data[x];
+}

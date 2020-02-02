@@ -20,6 +20,8 @@ struct ValueC {
 	void push_front(int x);
 	void push_rear(int x);
 
+	int get(int x);
+
 private:
 	std::vector<int> _data;
 };

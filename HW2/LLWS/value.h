@@ -22,6 +22,7 @@ struct ValueC {
 
 	int get(int x);
 	int search(int x);
+	void print();
 
 private:
 	std::vector<int> _data;

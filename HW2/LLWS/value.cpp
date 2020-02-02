@@ -7,6 +7,8 @@ This program will define the struct used for testing
 */
 
 #include "value.h"
+#include <iostream>
+using std::cout;
 
 ValueC::ValueC() :
 	_data()
@@ -55,5 +57,13 @@ int ValueC::search(int x)
 		}
 	}
 
-	return -1;
+	return -1;  //If not found
+}
+
+void ValueC::print()
+{
+	for (int z : _data)
+	{
+		cout << z << ", ";
+	}
 }

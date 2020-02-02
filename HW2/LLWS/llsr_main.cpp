@@ -41,4 +41,26 @@ int main()
 	cout << "Now using pop_front() to get the value at the front of the data group:" << endl;
 	cout << "Value at the front of data group is " << values.pop_front() << endl;
 
+
+	//search
+	int input;
+	int result;
+
+	cout << "Will now search for a value.  Please enter a value to search for: ";
+	cin >> input;
+	cout << endl;
+	result = values.search(input);
+
+	if (result == -1)
+	{
+		cout << "Value not found" << endl;
+	}
+	else
+	{
+		cout << "Value found at slot " << result;
+	}
+
+
+	cout << "Will now print out the data values:" << endl;
+	values.print();
 }

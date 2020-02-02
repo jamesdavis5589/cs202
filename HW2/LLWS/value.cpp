@@ -44,3 +44,16 @@ int ValueC::get(int x)
 {
 	return _data[x];
 }
+
+int ValueC::search(int x)
+{
+	for (int i = 0; i < _data.size(); i++)
+	{
+		if (_data[i] == x)
+		{
+			return i;
+		}
+	}
+
+	return -1;
+}

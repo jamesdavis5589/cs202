@@ -21,6 +21,7 @@ struct ValueC {
 	void push_rear(int x);
 
 	int get(int x);
+	int search(int x);
 
 private:
 	std::vector<int> _data;

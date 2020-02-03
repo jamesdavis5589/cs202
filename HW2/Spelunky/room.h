@@ -23,6 +23,8 @@ public:
 
 	void setLD(string s);
 	void setSD(string s);
+	string getLD();
+	string getSD();
 };
 
 #endif

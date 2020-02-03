@@ -33,3 +33,13 @@ void Room::setSD(string s)
 {
 	_sDesc = s;
 }
+
+string Room::getLD()
+{
+	return _lDesc;
+}
+
+string Room::getSD()
+{
+	return _sDesc;
+}

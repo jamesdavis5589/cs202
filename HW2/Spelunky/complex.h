@@ -19,6 +19,9 @@ class Complex {
 
 public:
 	Complex();
+
+	void read();
+	void write();
 };
 
 #endif // !complex_h

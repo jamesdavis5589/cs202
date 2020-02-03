@@ -2,8 +2,8 @@
 James Davis
 January 30th
 CS202
-HW2 - Spelunky - spelunkey_main.cpp
-This program will
+HW2 - Spelunky - room.cpp
+This program will define class room
 */
 
 #include "room.h"

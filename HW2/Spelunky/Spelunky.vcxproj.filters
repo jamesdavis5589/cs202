@@ -21,9 +21,15 @@
     <ClCompile Include="room.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="complex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="room.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="complex.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

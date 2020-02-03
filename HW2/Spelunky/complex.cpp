@@ -18,8 +18,28 @@ Complex::Complex() :
 {
 	for (int i = 0; i < 15; i++)
 	{
-		_system.push_back(Room());
+		_system.push_back(Room("Short description", "Long description"));
 	}
+}
+
+string Complex::getSD(int x)
+{
+	return _system[x].getSD();
+}
+
+string Complex::getLD(int x)
+{
+	return _system[x].getLD();
+}
+
+void Complex::setSD(int x, string s)
+{
+	_system[x].setSD(s);
+}
+
+void Complex::setLD(int x, string s)
+{
+	_system[x].setLD(s);
 }
 
 /*

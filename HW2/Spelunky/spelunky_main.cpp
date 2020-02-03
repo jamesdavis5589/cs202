@@ -11,4 +11,5 @@ This program will run the main program using room and complex
 int main()
 {
 	Complex caves;
+	caves.read();
 }

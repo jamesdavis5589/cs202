@@ -1,0 +1,32 @@
+Cave 0 - The Mouth
+Harsh wind whistles past your ears as you stare into the dark mouth of the cave.
+Cave 1 - Entrance
+Bright light flows in from the mouth of the cave, illuminating small rocks.
+Cave 2 - Dusk
+The cave is still somewhat illuminated, but getting darker.  Not much else is different.
+Cave 3 - Chasm
+In front of you lies a seemingly bottomless pit.  No light can be seen fron the bottom.
+Cave 4 - Rock bottom
+You are at the bottom of the pit.  Through your headlamp, many smashed boulders lie around.
+Cave 5 - Tunnel
+Now in a vey small tunnel.  The smoooth walls seem to press down on you with the weight of the Earth itself.
+Cave 6 - The lake
+Now in a enourmous cavern, whose center is filled with dark, still water.
+Cave 7 - Underwater
+Now under the water, the darkness seems to grab hold of you.  Despite your air mask, you feel it suffocate you.
+Cave 8 - The Lost Sea
+After swimming down even further, dim light eminates through small cracks in the walls.  In the faint light, you can make out the shapes of fish, still and unmoving.
+Cave 9 - Up for Air
+Ahead, ghostly light drifts down from above.  The fish, still unmoving.
+Cave 10 - Air?
+Though out of the dark water, wandering through the thick mist of the cave is tough, as if you are still swimming.
+Cave 11 - Fields of Mist
+The cave has no bounds, and the mist extends as far as you can make out.  In the distance, a bright light drifts out from the distance.
+Cave 12 - Into the Light
+You moreso feel the light than see it.  There is no sounds here, except the thundering echoe of your footsteps
+Cave 13 - Awakening
+You blink as if awakening.  The heavanly mist behind you, the ruins ahead of you.
+Cave 14 - Ruins
+You have finally made it, your journey is over.  The Crown weighs heavily in your fingertips, waiting to be worn.
+Cave 15 - The Mouth
+Harsh wind whistles past your ears as you stare into the dark mouth of the cave.  You hear The Crown, it's voice both far away, and frighteningly close.

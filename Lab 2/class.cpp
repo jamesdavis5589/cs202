@@ -27,11 +27,10 @@ MyClass::MyClass(const MyClass& m)
 	word = m.word;
 }
 
-void MyClass::destroy()
+MyClass::~MyClass()
 {
 	number = NULL;
 	letter = NULL;
-	word = nullptr;
 }
 
 int MyClass::getNumber()

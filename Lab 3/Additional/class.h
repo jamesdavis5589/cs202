@@ -31,6 +31,8 @@ public:
 	void setNumber(int x);
 	void setLetter(char &c);
 	void setWord(const std::string &s);
+
+	void printNum();
 };
 
 #endif

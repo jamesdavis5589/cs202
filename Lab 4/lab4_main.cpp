@@ -18,6 +18,9 @@ using std::endl;
 using std::string;
 using std::getline;
 
+using std::cin;
+using std::cout;
+
 int main()
 {
 	ifstream ifs("text.txt");
@@ -44,6 +47,8 @@ int main()
 
 	for (int i = 0; i < x; i++)
 	{
-		oss << s << endl;
+		ofs << s << endl;
 	}
+
+	oss << "Repeated phrase saved to file \"output.txt\"" << endl;
 }

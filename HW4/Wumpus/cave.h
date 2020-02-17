@@ -17,6 +17,15 @@ class Cave {
 
 public:
 	Cave();
+	Cave(int y, int z);
 };
+
+/*
+ROOM TYPES:
+1 - Clear
+2 - Bats
+3 - Pit
+4 - Wumpus
+*/
 
 #endif // !room_h

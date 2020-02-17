@@ -31,11 +31,19 @@ void rules()
 	cout << "Getting caught by bats will move you to a random room" << endl;
 	cout << "Bumping into the Wumpus will result in you dying, by the Wumpus.  Eaten." << endl;
 	cout << endl;
-	cout << "To win, shoot the Wumpus with an arrow";
+	cout << "To win, shoot the Wumpus with an arrow" << endl;
+	cout << endl;
+}
+
+void turn()
+{
+
 }
 
 int main()
 {
 	cout << "Hello and welcome to Hunt the Wumpus" << endl;
+	cout << "If you ever want to see the rules, just type \"rules\"" << endl;
+	rules();
 
 }

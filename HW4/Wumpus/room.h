@@ -14,6 +14,9 @@ class Room {
 public:
 	Room();
 	Room(int x);
+
+	void setType(int x);
+	int getType();
 };
 
 /*

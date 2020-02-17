@@ -3,7 +3,7 @@ James Davis
 February 15th
 CS202
 HW4 - Hunt the Wumpus - room.h
-This program will 
+This program will house prototypes for class room
 */
 
 #ifndef room_h
